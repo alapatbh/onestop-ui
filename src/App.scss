@@ -1,0 +1,40 @@
+.registerConfirm{
+  width: 45% !important;
+  margin: auto;
+  .registerUser{
+    margin: 1em;
+    .registerHeading{
+      font-size: 2em;
+      text-align: center;
+    }
+  }
+}
+.header{
+  padding: 0.5em;
+  padding-left: 10%;
+  font-size: 2em;
+  font-weight: bold;;
+}
+.labelFont{
+  font-size: 14px;
+}
+
+.row {
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+}
+
+div {
+  box-sizing: border-box;
+}
