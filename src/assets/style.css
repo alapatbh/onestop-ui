@@ -1,0 +1,245 @@
+:root {
+    /*
+    Helpful maintenance tools:
+  
+    https://htmlcolors.com/hex-to-hsl
+    https://www.w3schools.com/colors/colors_hsl.asp
+    https://meyerweb.com/eric/tools/color-blend/#FEF1F2:EC202A:9:hex
+    */
+  
+    --os-bg-color: #fff;
+    --os-active-color: #fff;
+    --os-text-color: #333;
+    --os-inactive-text-color: #777;
+    --os-form-error-color: #ff0f35;
+    --os-focus-color: #99c7ff;
+    --os-focus-shadow-color: #e5f1ff;
+    --os-border-color: #ced4da;
+    --os-list-item-border-color: #eee;
+    --os-border-radius: 0.25em;
+    --logo-width: 189px;
+    --logo-height: 112px;
+    --os-hyperlink: #1877f2;
+  
+    /* main navigation */
+  
+    --os-primary-nav-fg-color: #fff;
+    --os-primary-nav-selected-fg-color: #40A9CE;
+    --os-primary-nav-bg-color: #444;
+    --os-primary-nav-hover-bg-color: #333;
+    --os-primary-nav-selected-bg-color: #1b1c1d;
+    --os-nav-dark-bg-pulse-color: rgba(255, 255, 255, 0.2);
+  
+    /*
+    Each primary color has 10 darker and 10 lighter variations;
+    darkest is generally hs(l-30%), while lightest is generally hs(l=97%)
+    */
+  
+    --os-pri-color-1-dark-10: #010709;
+    --os-pri-color-1-dark-9: #021117;
+    --os-pri-color-1-dark-8: #041B25;
+    --os-pri-color-1-dark-7: #052532;
+    --os-pri-color-1-dark-6: #062F40;
+    --os-pri-color-1-dark-5: #083A4E;
+    --os-pri-color-1-dark-4: #09445C;
+    --os-pri-color-1-dark-3: #0A4E6A;
+    --os-pri-color-1-dark-2: #0B5877;
+    --os-pri-color-1-dark-1: #0D6285;
+    --os-pri-color-1: #0E6C93;
+    --os-pri-color-1-light-1: #257A9E;
+    --os-pri-color-1-light-2: #3B88A8;
+    --os-pri-color-1-light-3: #5297B3;
+    --os-pri-color-1-light-4: #69A5BE;
+    --os-pri-color-1-light-5: #80B3C9;
+    --os-pri-color-1-light-6: #96C1D3;
+    --os-pri-color-1-light-7: #ADCFDE;
+    --os-pri-color-1-light-8: #C4DEE9;
+    --os-pri-color-1-light-9: #DAECF3;
+    --os-pri-color-1-light-10: #F1FAFE;
+  
+    --os-pri-color-2-dark-10: #061014;
+    --os-pri-color-2-dark-9: #0A1A20;
+    --os-pri-color-2-dark-8: #0D232C;
+    --os-pri-color-2-dark-7: #112D38;
+    --os-pri-color-2-dark-6: #143644;
+    --os-pri-color-2-dark-5: #184050;
+    --os-pri-color-2-dark-4: #1B495B;
+    --os-pri-color-2-dark-3: #1F5367;
+    --os-pri-color-2-dark-2: #225C73;
+    --os-pri-color-2-dark-1: #26667F;
+    --os-pri-color-2: #296F8B;
+    --os-pri-color-2-light-1: #3D7D96;
+    --os-pri-color-2-light-2: #518BA1;
+    --os-pri-color-2-light-3: #6698AD;
+    --os-pri-color-2-light-4: #7AA6B8;
+    --os-pri-color-2-light-5: #8EB4C3;
+    --os-pri-color-2-light-6: #A2C2CE;
+    --os-pri-color-2-light-7: #B6D0D9;
+    --os-pri-color-2-light-8: #CBDDE5;
+    --os-pri-color-2-light-9: #DFEBF0;
+    --os-pri-color-2-light-10: #F3F9FB;
+  
+    --os-pri-color-3-dark-10: #000000;
+    --os-pri-color-3-dark-9: #00070A;
+    --os-pri-color-3-dark-8: #000E13;
+    --os-pri-color-3-dark-7: #00151D;
+    --os-pri-color-3-dark-6: #001C26;
+    --os-pri-color-3-dark-5: #002330;
+    --os-pri-color-3-dark-4: #002A3A;
+    --os-pri-color-3-dark-3: #003143;
+    --os-pri-color-3-dark-2: #00384D;
+    --os-pri-color-3-dark-1: #003F56;
+    --os-pri-color-3: #004660;
+    --os-pri-color-3-light-1: #185870;
+    --os-pri-color-3-light-2: #306A80;
+    --os-pri-color-3-light-3: #487C90;
+    --os-pri-color-3-light-4: #608EA0;
+    --os-pri-color-3-light-5: #78A1B0;
+    --os-pri-color-3-light-6: #90B3BF;
+    --os-pri-color-3-light-7: #A8C5CF;
+    --os-pri-color-3-light-8: #C0D7DF;
+    --os-pri-color-3-light-9: #D8E9EF;
+    --os-pri-color-3-light-10: #F0FBFF;
+  
+    --os-pri-color-4-dark-10: #184B5D;
+    --os-pri-color-4-dark-9: #1C5468;
+    --os-pri-color-4-dark-8: #205E74;
+    --os-pri-color-4-dark-7: #24677F;
+    --os-pri-color-4-dark-6: #28718A;
+    --os-pri-color-4-dark-5: #2C7A96;
+    --os-pri-color-4-dark-4: #3083A1;
+    --os-pri-color-4-dark-3: #348DAC;
+    --os-pri-color-4-dark-2: #3896B7;
+    --os-pri-color-4-dark-1: #3CA0C3;
+    --os-pri-color-4: #40A9CE;
+    --os-pri-color-4-light-1: #52B1D3;
+    --os-pri-color-4-light-2: #64B9D7;
+    --os-pri-color-4-light-3: #76C1DC;
+    --os-pri-color-4-light-4: #88C9E0;
+    --os-pri-color-4-light-5: #9AD1E5;
+    --os-pri-color-4-light-6: #ABD9EA;
+    --os-pri-color-4-light-7: #BDE1EE;
+    --os-pri-color-4-light-8: #CFE9F3;
+    --os-pri-color-4-light-9: #E1F1F7;
+    --os-pri-color-4-light-10: #F3F9FC;
+  
+    --os-pri-color-5-dark-10: #05242E;
+    --os-pri-color-5-dark-9: #072F3C;
+    --os-pri-color-5-dark-8: #08394A;
+    --os-pri-color-5-dark-7: #0A4457;
+    --os-pri-color-5-dark-6: #0B4E65;
+    --os-pri-color-5-dark-5: #0D5973;
+    --os-pri-color-5-dark-4: #0F6481;
+    --os-pri-color-5-dark-3: #106E8F;
+    --os-pri-color-5-dark-2: #12799C;
+    --os-pri-color-5-dark-1: #1383AA;
+    --os-pri-color-5: #158EB8;
+    --os-pri-color-5-light-1: #2B99BF;
+    --os-pri-color-5-light-2: #41A4C6;
+    --os-pri-color-5-light-3: #57AECD;
+    --os-pri-color-5-light-4: #6DB9D4;
+    --os-pri-color-5-light-5: #83C4DB;
+    --os-pri-color-5-light-6: #99CFE1;
+    --os-pri-color-5-light-7: #AFDAE8;
+    --os-pri-color-5-light-8: #C5E4EF;
+    --os-pri-color-5-light-9: #DBEFF6;
+    --os-pri-color-5-light-10: #F1FAFD;
+  
+    /* secondary colors */
+  
+    --os-sec-color-1: #4E4E4E;
+    --os-sec-color-2: #F9F9F9;
+    --os-sec-color-3: #E65A1D;
+    --os-sec-color-4: #E5E5E5;
+    --os-sec-color-5: #595959;
+    --os-sec-color-6: #444;
+  
+    /* grayscale */
+  
+    --os-grey-dark-10: #444444;
+    --os-grey-dark-9: #494949;
+    --os-grey-dark-8: #4E4E4E;
+    --os-grey-dark-7: #535353;
+    --os-grey-dark-6: #585858;
+    --os-grey-dark-5: #5E5E5E;
+    --os-grey-dark-4: #636363;
+    --os-grey-dark-3: #686868;
+    --os-grey-dark-2: #6D6D6D;
+    --os-grey-dark-1: #727272;
+    --os-grey: #777;
+    --os-grey-light-1: #848484;
+    --os-grey-light-2: #919191;
+    --os-grey-light-3: #9D9D9D;
+    --os-grey-light-4: #AAAAAA;
+    --os-grey-light-5: #B7B7B7;
+    --os-grey-light-6: #C4C4C4;
+    --os-grey-light-7: #D1D1D1;
+    --os-grey-light-8: #DDDDDD;
+    --os-grey-light-9: #EAEAEA;
+    --os-grey-light-10: #F7F7F7;
+  
+    /* UI only colors */
+  
+    --os-ui-color-1: #00b02d;
+    --os-ui-color-1-dark: #207d38;
+    --os-ui-color-1-light: #1aff53;
+    --os-ui-color-1-lighter: #80ff9f;
+    --os-ui-color-1-lightest: #f0fff4;
+  
+    --os-ui-color-2: #099aed;
+    --os-ui-color-2-dark: #0e6ba1;
+    --os-ui-color-2-light: #53bcf9;
+    --os-ui-color-2-lighter: #9dd9fb;
+    --os-ui-color-2-lightest: #f0f9fe;
+  
+    /* alert/messages */
+  
+    --os-msg-color-std: #333;
+    --os-msg-color-std-bg: #f8f8f9;
+  
+    --os-msg-color-warning: #f45c2c;
+    --os-msg-color-warning-bg: #fffaf3;
+  
+    --os-msg-color-info: #196aa1;
+    --os-msg-color-info-bg: #f4fafe;
+  
+    --os-msg-color-success: #207d38;
+    --os-msg-color-success-bg: #f4fbf7;
+  
+    --os-msg-color-error: #bb1a21;
+    --os-msg-color-error-bg: #fdf5f5;
+  
+    /* spreading - there has been talks of branding, but still TBD */
+  
+    --os-spreading-row-border-color: #dfe1e2;
+    --os-spreading-acct-bg-color: #1d3059;
+    --os-spreading-cat-bg-color: #2a4a8b;
+    --os-spreading-grp-bg-color: #d4ddf0;
+    --os-spreading-grp-calc-bg-color: #839fd6;
+  }
+  
+  /* headers */
+  
+  h1 {
+    font-size: 2.25em;
+  }
+  
+  h2 {
+    font-size: 1.9em;
+  }
+  
+  h3 {
+    font-size: 1.65em;
+  }
+  
+  h4 {
+    font-size: 1.4em;
+  }
+  
+  h5 {
+    font-size: 1.25em;
+  }
+  
+  h6 {
+    font-size: 1.1em;
+  }
