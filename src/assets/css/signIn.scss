@@ -19,3 +19,9 @@
         height: 3em;
     }
 }
+
+.signInSpan{
+    color: var(--os-hyperlink);
+    text-decoration: underline;
+    cursor: pointer;
+}

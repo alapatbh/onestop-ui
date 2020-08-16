@@ -1,0 +1,26 @@
+.homeOverview{
+    padding: 1em;
+    width: 98%;
+    margin: auto;
+    .profile-col{
+        .profile-col-inner{
+            padding: 1.5em 1em;
+            width: 80%;
+            border: 1px solid var(--os-border-color);
+            text-align: center;
+            margin: auto;
+            height: 25em; // delete this line later
+        }
+        svg{
+            font-size:4em;
+            color: var(--os-grey)
+        }
+    }
+    .feed-col{
+        .feed-col-inner{
+            font-weight: bold;
+            color:  var(--os-grey-light-5);
+            font-size: 2em;
+        }
+    }
+}
