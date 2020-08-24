@@ -1,0 +1,58 @@
+.main-folder-structure-row{
+    padding: 2em;
+    .each-main-col{
+        border: 1px solid var(--os-border-color);
+        height: 70vh;
+        border-radius: 4px 4px 0px 0px;
+        overflow: scroll;
+        .next-col-icon{
+            float: right;
+            margin-top: 5px
+        }
+        .list-group-item{
+            border: none;
+            padding: 0.2em 0.5em;
+            cursor: pointer;
+            &:hover {
+                background-color: var(--os-grey-light-9);
+            }
+        }
+        .add-folder-list{
+           svg{
+                font-size: 1.4em;
+                vertical-align: middle;
+                color:var(--os-grey)
+            }
+            .saveFolder{
+                cursor: pointer;
+                margin-top: 5px;
+                font-size: 1.6em;
+                color:var(--green)
+            }
+            .cancelSaveFolder{
+                cursor: pointer;
+                margin-top: 5px;
+                font-size: 1.6em;
+                color:var(--red)
+            }
+        }
+    }
+    .add-material-div{
+        cursor: pointer;
+        background-color: var(--os-grey-light-9);
+        color: var(--os-grey);
+        font-weight: bold;
+        text-align: center;
+        padding: 1em;
+        font-size: 1.5em;
+        border: 1px solid var(--os-border-color);
+        border-top: none;
+        border-radius: 0px 0px 4px 4px;
+        &:hover{
+            background-color: var(--os-grey-light-8);
+        }
+        &:active{
+            background-color: var(--os-grey-light-7);
+        }
+    }
+}

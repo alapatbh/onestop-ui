@@ -79,3 +79,22 @@ div {
 ::-webkit-scrollbar-thumb {
   background-color: rgba(0, 0, 0, 0.5);
 }
+
+.main-header{
+  a{
+    font-weight: bold;
+    color: var(--os-text-color);
+    vertical-align: middle;
+    padding-right: 1em;
+    padding-left: 1em;
+    margin-top: 5px;
+    &:hover{
+      text-decoration: none;
+      color: var(--os-text-color);
+    }
+  }
+  .logo-nav-gap{
+    padding-right: 2em !important;
+    margin-top: -15px;
+  }
+}

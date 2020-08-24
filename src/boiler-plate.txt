@@ -1,0 +1,20 @@
+Dynamo db local setup
+
+docker run -d -p 8000:8000 amazon/dynamodb-local
+
+docker ps
+
+aws dynamodb create-table \
+    --table-name Profile \
+    --key-schema \
+        AttributeName=EmailId,keyType=HASH \
+        AttributeName=UserName,keyType=RANGE \
+    --attribute-defnitions \
+        AttributeName=EmailId,AttributeType=S \
+        AttributeName=UserName,AttributeType=S \
+    --provisioned-throughput \
+        ReadCapacityUnits= 5, WriteCapacityUnits =5 \
+    --endpoint-url http://localhost:8000
+
+aws dynamodb list-tables --enpoint-url http://localhost:8000
+
