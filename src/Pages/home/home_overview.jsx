@@ -14,7 +14,7 @@ export default props => {
                     </div>
                 </Col>
                 <Col xs={7} className="feed-col">
-                    <div className="feed-col-inner"> Coming  Soon!</div>
+                    <div className="feed-col-inner"> Dashboard </div>
                 </Col>
                 <Col xs={2}>
                     

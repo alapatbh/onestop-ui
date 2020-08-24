@@ -4,8 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faUserCircle} from "@fortawesome/free-regular-svg-icons";
 import {Logo} from './logo'
 import {removeAuthTocken} from '../settings'
-import {faSignOutAlt} from "@fortawesome/free-solid-svg-icons";
-import { Link } from '@reach/router';
+import {faSignOutAlt, faQuestion, faSitemap, faFileAlt} from "@fortawesome/free-solid-svg-icons";
+import {Link} from '@reach/router'
 
 export default props => {
 
@@ -15,11 +15,14 @@ export default props => {
     }
 
     return (
-    <Navbar bg="light" expand="lg">
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
+    <Navbar bg="light" expand="lg" className="main-header">
+        <Navbar.Toggle/>
+        <Navbar.Collapse>
             <Nav className="mr-auto">
-                <Nav.Link><Link to="/"><Logo/></Link></Nav.Link>
+                <span className="logo-nav-gap"><Nav.Link href="/"><Logo/></Nav.Link></span>
+                <Link to="/blueprint">Blueprint <FontAwesomeIcon icon={faSitemap}/></Link>
+                <Link to="/questions">Questions <FontAwesomeIcon icon={faQuestion}/></Link>
+                <Link to="/documents">Documents <FontAwesomeIcon icon={faFileAlt}/></Link>
             </Nav>
             <Form inline>
                 <FormControl type="text" placeholder="Search" className="mr-sm-2" />
